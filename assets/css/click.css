@@ -1,0 +1,126 @@
+.navbar {
+    z-index: 1039;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding-left: 0;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    display: flex;
+    padding: 0.5rem 1rem;
+    background-color: #009B72;
+}
+
+.navbar a {
+    color: white;
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    font: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    text-decoration: none;
+    background: transparent;
+}
+
+#app_root {
+    line-weight: 1.4;
+    font-weight: 400;
+    white-space: normal;
+    color: #31373d;
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: greyscale;
+    text-rendering: optimizeLegibility;
+}
+
+.bgw {
+    display: block;
+}
+
+.view {
+    min-height: 0;
+    min-width: 0;
+    justify-content: flex-start;
+}
+
+.div {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.text,
+.view {
+    position: relative;
+}
+
+.bgw>div,
+.ibgw>div {
+    z-index: 2;
+}
+
+.image_pd {
+    align-items: center;
+    justify-content: center;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.cmn_flex_row {
+    flex-direction: row;
+}
+
+.cmn_flex_wrapper {
+    align-items: stretch;
+    justify-content: stretch;
+    max-width: 100%;
+}
+
+.title {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+    color: #31373d;
+    -webkint-font-smoothing: antialiased;
+}
+
+.desc {
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #31373d;
+    -webkit-font-smoothing: antialiased;
+}
+
+.margin {}
+
+.thread {
+    width: 75%;
+}
+
+@media only screen and (max-width:768px) {
+    .margin {
+        margin-left: 10px;
+    }
+    .thread {
+        width: normal;
+    }
+    .img {
+        width: 100%;
+    }
+    .desc {
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        color: #31373d;
+        -webkit-font-smoothing: antialiased;
+    }
+}
